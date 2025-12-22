@@ -1,0 +1,28 @@
+services:
+
+  db:
+    image: mariadb
+    restart: on-failure:5
+    ports:
+      - "4061:3306"
+
+    environment:
+      MARIADB_ROOT_PASSWORD: Password123!
+      MARIADB_DATABASE: mayoiga
+      MARIADB_USER: user1
+      MARIADB_PASSWORD: user1
+
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+  
+  flask:
+    build:
+      context: ./Mayoiga
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    ports:
+      - "5000:5000"
+
+    environment:
+      FLASK_APP: app
