@@ -1,5 +1,7 @@
-body {
-  background-image: url('back.png');
+.background {
+  background-image: url('img/library.jpg');
+  background-size: cover;
+  background-position: 0 0;
 }
 h1 {
   text-align: center;
@@ -7,10 +9,10 @@ h1 {
   color: white;
   font-family: medieval;
   text-shadow: 4px 4px 8px black;
-  background-image: url('scroll.png');
-  background-size: cover;
-  background-position: center;
-  display: inline-block;
+  #background-image: url('scroll.png');
+  #background-size: cover;
+  #background-position: center;
+  #display: inline-block;
   padding: 70px 170px;
 }
 p {
@@ -18,7 +20,7 @@ p {
   font-size: 50px;
   color: white;
   font-family: medieval;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 2px 2px 4px black;
 }
 
 @font-face{
