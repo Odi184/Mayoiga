@@ -11,14 +11,13 @@ window.onload = function () {
 }; */
 
 let pos = 0;
-const time = 1000;
+const time = 150;
 function backmove() {
 	document.body.style.backgroundPosition = `50% ${pos}%`;
 	if (pos < 50) {
-	pos += `50 / ${time}`;
+	pos += 50/time;
 	requestAnimationFrame(backmove);
 	}
 }
 
 document.addEventListener("DOMContentLoaded", backmove);
-requestAnimationFrame(backmove);
