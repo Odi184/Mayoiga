@@ -3,6 +3,6 @@
 FROM python:3.11-slim
 WORKDIR /app
 #COPY requirements.txt requirements.txt
-RUN pip3 install Flask -v
+RUN pip3 install Flask Flask-SQLAlchemy -v
 COPY . .
 CMD [ "python3", "-m", "flask", "run", "--host=0.0.0.0", "--port=5000"]

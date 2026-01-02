@@ -8,7 +8,7 @@ function animate() {
 
 window.onload = function () {
   animate();
-}; */
+};
 
 let pos = 0;
 const time = 150;
@@ -20,4 +20,4 @@ function backmove() {
 	}
 }
 
-document.addEventListener("DOMContentLoaded", backmove);
+document.addEventListener("DOMContentLoaded", backmove);*/

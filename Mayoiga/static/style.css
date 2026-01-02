@@ -1,7 +1,12 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+}
 .background {
-  background-image: url('img/library.jpg');
+  background-image: url('img/lib2.jpg');
   background-size: cover;
-  background-position: 50% 0%;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .title {
   position: relative;
@@ -15,7 +20,7 @@
   background-position: center;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  -webkit-text-stroke: 2px rgb(218,165,32,0.25);
+  -webkit-text-stroke: 0.1px rgb(218,165,32,0.15);
 }
 .title::before {
   font-size: 100px;
@@ -29,6 +34,9 @@
   content: attr(data-text);
   z-index: -1;
   inset: 0;
+}
+.form-box {
+  text-align: center;
 }
 .git {
   width: 35px;
