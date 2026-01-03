@@ -3,22 +3,24 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="{{  url_for('static', filename='spell-book.png')  }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <script src="{{ url_for('static', filename='background.js') }}"></script>
+    <!--<script src="{{ url_for('static', filename='background.js') }}"></script>-->
     <title>Mayoiga</title>
   </head>
 
   <body class="background" id="back_img">
     <h1 class="title" data-text="Mayoiga">Mayoiga</h1>
-    <p>Welcome to your personal library!<br></p>
-    <div class="login-gif">
-    	<a href="login_page.html" data-text="Registration">
-	    	<img class="img-form" src="{{ url_for('static', filename='form.png') }}">
-    	</a>
+    <div class="form-box">
+	    <form>
+		    <label for="user">Username</label>
+		    <input type="text" id="user"><br>
+		    <label for="pass">Password</label>
+		    <input type="text" id="pass"><br>
+		    <input type="submit" value="Login">
+	    </form>
     </div>
-    <p id="hov-text"></p>
     <footer>
       <a href="https://github.com/Odi184/Mayoiga/tree/main#">
         <img class="git" src="{{ url_for('static', filename='github-mark.png') }}">

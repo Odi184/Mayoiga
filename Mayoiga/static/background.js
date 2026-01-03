@@ -21,3 +21,22 @@ function backmove() {
 }
 
 document.addEventListener("DOMContentLoaded", backmove);*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+	const paragraph = document.getElementById("hov-text");
+	const gif = "/static/img/form.gif";
+
+	document.querySelectorAll(".login-gif a img").forEach(img => {
+		const origin = img.src;
+
+		img.addEventListener("mouseenter", () => {
+			paragraph.textContent = img.closest("a").dataset.text;
+			img.src = gif;
+		});
+		img.addEventListener("mouseleave", () => {
+			paragraph.textContent = "";
+			img.src = origin;
+		});
+	});
+});
