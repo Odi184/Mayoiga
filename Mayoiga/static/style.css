@@ -5,11 +5,31 @@ body {
 #hov-text {
   min-height: 3rem;
 }
+.register-form {
+  font-family: medieval;
+  font-size: clamp(3rem, 2.5vw, 1.25rem);
+  text-shadow: 4px 2px 0px black;
+  color: goldenrod;
+}
+.form-box {
+  display: flex;
+  margin:0;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  background-image: url('img/scroll-form.png');
+  background-size: 1000px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 1000px;
+  min-width: 800px;
+}
 .background {
   background-image: url('img/lib2.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .title {
   position: relative;
