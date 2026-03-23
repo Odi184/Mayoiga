@@ -19,6 +19,7 @@ services:
     build:
       context: ./Mayoiga
       dockerfile: Dockerfile
+      image: ghcr.io/odi184/mayoiga:latest
     depends_on:
       - db
     ports:
